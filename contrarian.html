@@ -14,24 +14,25 @@
 
         .container {
             max-width: max-content;
+            align-items: center;
             margin: 40px auto;
             padding: 40px;
             background-color: white;
             border-radius: 12px;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
         }
 
         .text-container {
             flex: 1;
             margin-right: 40px;
-            max-width: 50%;
+            max-width: 75%;
         }
 
         .chart-container {
             flex: 1;
             text-align: center;
-            max-width: 50%;
+            max-width: 75%;
             margin-top: 100px; /* Adjust this value to align with Framework Analysis */
         }
 
@@ -110,6 +111,45 @@
         .display-1{
             font-size: 3rem;
         }
+
+        .table-container {
+            background-color: #f9f9f9; /* Light background for the container */
+            border-radius: 12px; /* Rounded corners */
+            padding: 20px; /* Padding around the content */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            margin-bottom: 40px; /* Space below the container */
+        }
+
+        table {
+            width: 100%; /* Full width */
+            border-collapse: collapse; /* Remove space between borders */
+            margin-top: 20px; /* Space above the table */
+        }
+
+        th, td {
+            padding: 12px; /* Padding inside cells */
+            text-align: left; /* Align text to the left */
+            border-bottom: 1px solid #ddd; /* Light border below each row */
+        }
+
+        th {
+            background-color: #37474f; /* Dark background for header */
+            color: white; /* White text for header */
+            font-weight: bold; /* Bold text for header */
+        }
+
+        tr:hover {
+            background-color: #e0f7fa; /* Light blue background on hover */
+        }
+
+        td {
+            background-color: #ffffff; /* White background for cells */
+            color: #333; /* Dark text color */
+        }
+
+        td strong {
+            color: #007bff; /* Blue color for strong text */
+        }
     </style>
 </head>
 <body>
@@ -157,16 +197,16 @@
                     <ol>
                         <li>Bearish Valuation from Minerva Investment Society<
                             <ul>
-                                <li>**Key Arguments**: Tesla’s target price of $57.20 represents a 65% downside from its current price. The valuation is based on both absolute (FCFF) and relative (EV/Sales) models, emphasizing that Tesla's growth is overestimated relative to peers and that its current valuation embeds overly optimistic assumptions.</li>
-                                <li>**Evidence**: Low EV adoption rates in certain markets, competitive pressures from legacy automakers, and reliance on subsidies for profitability.</li>
-                                <li>**Credibility**: Minerva's methodology is rigorous but conservative, focusing heavily on traditional valuation metrics. While grounded, their view may underestimate Tesla’s ability to achieve disruptive market share.</li>
+                                <li><strong>Key Arguments</strong>: Tesla’s target price of $57.20 represents a 65% downside from its current price. The valuation is based on both absolute (FCFF) and relative (EV/Sales) models, emphasizing that Tesla's growth is overestimated relative to peers and that its current valuation embeds overly optimistic assumptions.</li>
+                                <li><strong>Evidence</strong>: Low EV adoption rates in certain markets, competitive pressures from legacy automakers, and reliance on subsidies for profitability.</li>
+                                <li><strong>Credibility</strong>: Minerva's methodology is rigorous but conservative, focusing heavily on traditional valuation metrics. While grounded, their view may underestimate Tesla’s ability to achieve disruptive market share.</li>
                             </ul>
                         </li>
                         <li>Bullish Long-Term Margin Expansion (Morningstar)<
                             <ul>
-                                <li>**Key Arguments**: Tesla’s gross margins are expected to expand from 29% in 2021 to 39% by 2031 due to manufacturing efficiency and lower battery costs.</li>
-                                <li>**Evidence**: Tesla’s investments in vertically integrated battery production, along with economies of scale, are projected to outpace cost pressures from materials like lithium.</li>
-                                <li>**Credibility**: Morningstar has a consistent track record in providing fair value estimates but often errs on the side of conservative growth trajectories.</li>
+                                <li><strong>Key Arguments</strong>: Tesla’s gross margins are expected to expand from 29% in 2021 to 39% by 2031 due to manufacturing efficiency and lower battery costs.</li>
+                                <li></strong>Evidence</strong>: Tesla’s investments in vertically integrated battery production, along with economies of scale, are projected to outpace cost pressures from materials like lithium.</li>
+                                <li></strong>Credibility</strong>: Morningstar has a consistent track record in providing fair value estimates but often errs on the side of conservative growth trajectories.</li>
                             </ul>
                         </li>
                     </ol>
@@ -174,15 +214,15 @@
                 <h3>Bullish Views</h3>
                 <h4>1. Tesla’s Economic Moats (DBS Group Research)</h4>
                 <ul>
-                    <li>**Key Arguments**: Tesla's EV charging infrastructure and Full Self-Driving (FSD) technology create significant barriers to entry, positioning the company as the leader in the space.</li>
-                    <li>**Factors Driving View**:
+                    <li><strong>Key Arguments</strong>: Tesla's EV charging infrastructure and Full Self-Driving (FSD) technology create significant barriers to entry, positioning the company as the leader in the space.</li>
+                    <li><strong>Factors Driving View</strong>:
                         <ul>
                             <li>Adoption of Tesla’s Supercharger network by competitors in North America.</li>
                             <li>Ramping production of the Cybertruck and Tesla Semi as new revenue streams in 2025.</li>
                             <li>Expected growth in energy storage solutions like the Megapack.</li>
                         </ul>
                     </li>
-                    <li>**Risks/Challenges**:
+                    <li><strong>Risks/Challenges</strong>:
                         <ul>
                             <li>Regulatory hurdles surrounding autonomous driving technologies.</li>
                             <li>Heightened competition from Chinese EV makers such as BYD and Xpeng.</li>
@@ -191,14 +231,14 @@
                 </ul>
                 <h4>2. AI Leadership Boosting Tech Sector</h4>
                 <ul>
-                    <li>**Key Arguments**: The "Magnificent 7," including Tesla, are expected to drive superior returns due to their dominance in AI-related investments.</li>
-                    <li>**Factors Driving View**:
+                    <li><strong>Key Arguments</strong>: The "Magnificent 7," including Tesla, are expected to drive superior returns due to their dominance in AI-related investments.</li>
+                    <li><strong>Factors Driving View</strong>:
                         <ul>
                             <li>Tesla’s investments in FSD and robotics (e.g., Optimus humanoid robot).</li>
                             <li>Scaling of Tesla’s software-driven revenue streams.</li>
                         </ul>
                     </li>
-                    <li>**Risks/Challenges**:
+                    <li><strong>Risks/Challenges</strong>:
                         <ul>
                             <li>Elevated valuations at 30x forward P/E, making the stocks vulnerable to growth disappointments.</li>
                         </ul>
@@ -207,14 +247,14 @@
                 <h3>Bearish Views</h3>
                 <h4>1. Valuation Overhang from Tesla’s Peers</h4>
                 <ul>
-                    <li>**Key Arguments**: Competition from Chinese OEMs, especially BYD, poses risks to Tesla’s growth in major markets like China and Europe.</li>
-                    <li>**Factors Driving View**:
+                    <li><strong>Key Arguments</strong>: Competition from Chinese OEMs, especially BYD, poses risks to Tesla’s growth in major markets like China and Europe.</li>
+                    <li><strong>Factors Driving View</strong>:
                         <ul>
                             <li>BYD’s competitive pricing strategy and rapid market share gains in China.</li>
                             <li>Regulatory pressures on Tesla's direct-to-consumer sales model in the U.S..</li>
                         </ul>
                     </li>
-                    <li>**Catalysts**:
+                    <li><strong>Catalysts</strong>:
                         <ul>
                             <li>Negative earnings surprises due to pricing wars.</li>
                             <li>Delayed regulatory approvals for new Tesla products in major regions.</li>
@@ -223,14 +263,14 @@
                 </ul>
                 <h4>2. Bearish Macro Concerns for the S&P 500</h4> 
                 <ul>
-                    <li>**Key Arguments**: Analysts like those at William Blair highlight risks of single-digit equity returns in 2024, driven by softening GDP growth, sticky inflation, and narrow market leadership by AI-related sectors.</li>
-                    <li>**Factors Driving View**:
+                    <li><strong>Key Arguments</strong>: Analysts like those at William Blair highlight risks of single-digit equity returns in 2024, driven by softening GDP growth, sticky inflation, and narrow market leadership by AI-related sectors.</li>
+                    <li><strong>Factors Driving View</strong>:
                         <ul>
                             <li>Flattening earnings growth for the Magnificent 7 after years of dominance.</li>
                             <li>Risks of recession from prolonged high-interest rates.</li>
                         </ul>
                     </li>
-                    <li>**Catalysts**:
+                    <li><strong>Catalysts</strong>:
                         <ul>
                             <li>A reversion to mean valuations for the top-performing tech companies.</li>
                             <li>A slowdown in corporate investment due to economic uncertainty.</li>
@@ -240,13 +280,13 @@
 
                     <h4>Contrarian Signals Summary</h4>
                     <ul>
-                        <li>Bullish Contrarian Signals**:
+                        <li><strong>Bullish Contrarian Signals</strong>:
                             <ul>
                                 <li>Tesla’s potential for margin recovery driven by economies of scale and proprietary battery technology is underappreciated by bears.</li>
                                 <li>Tesla’s ability to monetize software-related services (e.g., FSD subscriptions) could unlock hidden growth.</li>
                             </ul>
                         </li>
-                        <li>Bearish Contrarian Signals**:
+                        <li><strong>Bearish Contrarian Signals</strong>:
                             <ul>
                                 <li>Valuations for Tesla and other AI-driven stocks may fail to justify their lofty levels if growth disappoints, particularly as earnings growth narrows beyond 2024.</li>
                                 <li>Regulatory scrutiny and geopolitical risks surrounding EV adoption could pose medium-term headwinds.</li>
@@ -255,6 +295,54 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="table-container">
+            <h2>Factor Analysis Table</h2><br>
+            <div id="table-spinner" class="spinner-border d-none" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <table border="1" cellspacing="0" cellpadding="8" id="fat-table" class="d-none">
+                <thead>
+                    <tr>
+                        <th><strong>Factor</strong></th>
+                        <th><strong>Relative Importance</strong></th>
+                        <th><strong>Key Example</strong></th>
+                        <th><strong>Why It Matters</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Valuation Divergence Between Consensus and Contrarian Views</strong></td>
+                        <td  style="background-color: #878787;">1</td>
+                        <td>Tesla valuation risks overlooked by neutral market sentiment.</td>
+                        <td>Persistent overvaluation concerns, particularly for high-growth stocks like Tesla or the “Magnificent 7,” highlight potential mispricing risks. Contrarian bearish views suggest that mainstream optimism may be ignoring structural risks like margin compression or delayed returns in AI.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sentiment Divergence in AI-Driven Themes</strong></td>
+                        <td style="background-color: #a1a1a1;">0.85</td>
+                        <td>Concerns about delayed industrial AI profitability versus bullish market sentiment.</td>
+                        <td>AI’s transformative potential is widely acknowledged, but contrarian skepticism about monetization timelines and high infrastructure costs indicates that market optimism may overlook structural challenges.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Geopolitical and Supply Chain Risks</strong></td>
+                        <td style="background-color: #b6b8b6;">0.75</td>
+                        <td>Contrarian views highlight resilience in battery supply chains versus negative market sentiment.</td>
+                        <td>Market sentiment often leans negative on supply chain vulnerabilities, but contrarian views suggest opportunities for companies that vertically integrate or hedge geopolitical dependencies.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Policy Alignment with Regulatory Tailwinds</strong></td>
+                        <td style="background-color: #d9d9d9;">0.7</td>
+                        <td>Both market and contrarian sentiment align positively on the IRA’s benefits for EVs and renewables.</td>
+                        <td>Both consensus and contrarian views agree on the potential of regulatory tailwinds like the Inflation Reduction Act (IRA) to boost sectors such as renewable energy and EVs, underscoring the importance of aligning portfolios with these themes.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Contrarian Insights on Overconcentration Risks</strong></td>
+                        <td style="background-color: #ebebeb;">0.6</td>
+                        <td>Concerns about overreliance on “Magnificent 7” for market leadership versus neutral market sentiment.</td>
+                        <td>Contrarian bearish sentiment on the dominance of the “Magnificent 7” reflects overreliance on a narrow set of companies for market performance. This poses systemic risks if growth expectations are not met.</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="chart-container">
@@ -371,8 +459,21 @@
                 analysisSpinner.style.display = 'none';
                 analysisContent.style.display = 'block';
                 // Show chart container spinner for 4 seconds
-                showChartSpinner();
+                showTableSpinner();
             }, 5000); // 5 seconds
+        }
+        
+        function showTableSpinner() {
+            const tableSpinner = document.getElementById('table-spinner');
+            const table = document.getElementById('fat-table');
+
+            tableSpinner.classList.remove('d-none');
+
+            setTimeout(() => {
+                tableSpinner.classList.add('d-none');
+                table.classList.remove('d-none');
+                showChartSpinner();
+            }, 5000);
         }
 
         // Function to show chart spinner
