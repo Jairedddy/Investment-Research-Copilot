@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Non-Obvious Linkages Discovery</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/gramener/assets/main/straive-favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-size: 0.9rem;
+        }
+
+        .container {
+            max-width: max-content;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .text-container {
+            flex: 1;
+            margin-right: 40px;
+            max-width: 50%;
+        }
+
+        .chart-container {
+            flex: 1;
+            text-align: center;
+            max-width: 50%;
+            margin-top: 100px; /* Adjust this value to align with Framework Analysis */
+        }
+
+        .key-insight {
+            background-color: lightgreen;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            border: 1px solid green;
+        }
+
+        .key-insight h2 {
+            font-weight: bold;
+        }
+
+        .analysis-section {
+            margin-bottom: 40px;
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            color: black;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            text-align: center;
+            color: black;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #37474f;
+            padding-bottom: 15px;
+            color: black;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        h4 {
+            font-style: italic;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-left: 20px;
+            color: black;
+        }
+        ul ul {
+            list-style-type: circle;
+            padding-left: 20px;
+            margin-left: 20px;
+        }
+
+        .analysis-section p {
+            color: black;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #37474f;
+            margin: 30px 0;
+        }
+        .navbar-brand{
+            font-size: 1.25rem;
+        }
+        .display-1{
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark"">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html"><b>DashBoard ></b> <a class="navbar-brand" href="/nonobvious.html" style="text-decoration: underline;">Non-Obvious Linkages</a></a>
+          <button class="btn btn-light" onclick="window.location.href='https://docsearch.straivedemo.com/doctool/'">Chat with AI</button>
+          <button disabled="true" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="nav-item dropdown ms-auto" role="group" aria-label="Toggle dark mode" title="Toggle Dark Mode">
+              <button class="dark-theme-toggle btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle theme (light)">
+                <i class="bi bi-circle-half"></i> <span class="d-lg-none ms-2">Toggle theme</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><button class="dropdown-item active" data-bs-theme-value="light"><i class="me-2 bi bi-sun-fill"></i> Light</button></li>
+                <li><button class="dropdown-item" data-bs-theme-value="dark"><i class="me-2 bi bi-moon-stars-fill"></i> Dark</button></li>
+                <li><button class="dropdown-item"><i class="me-2 bi bi-circle-half"></i> Auto</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <h1 class="display-1 my-4 text-center">Non-Obvious Linkages Discovery</h1>
+    <div class="container">
+        <div class="text-container">
+
+            <div class="key-insight">
+                <h2>Key Insight</h2>
+                <div id="spinner" class="spinner-border" role="status" style="display: none;">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p id="key-insight-content" style="display: none;">The emerging interdependence between EV manufacturers and traditional utilities, which is quietly reshaping the competitive dynamics in both sectors. As EV adoption accelerates and energy storage technologies mature, utilities are no longer just passive providers of electricity—they are becoming active gatekeepers of grid access and storage optimization, controlling a critical bottleneck in the scalability of EV infrastructure. This creates a hidden power asymmetry, where utilities can influence the economics of EV charging networks, particularly as time-of-use pricing, renewable energy integration, and distributed energy resources (DER) become mainstream. For investors, this suggests that traditional utilities, often overlooked as growth plays, could become critical enablers—or disablers—of EV adoption, creating opportunities for utilities that strategically partner with EV firms or develop proprietary energy management platforms. Conversely, this interdependence raises risks for EV manufacturers like Tesla if utilities assert pricing power or regulatory leverage in ways that compress margins on charging and energy storage services.</p>
+            </div>
+
+            <div class="analysis-section">
+                <h2>Framework Analysis</h2>
+                <div id="analysis-spinner" class="spinner-border" role="status" style="display: none;">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div id="analysis-content" style="display: none;">
+                    <h3>Inter-Company Relationships</h3>
+                <h4>1. Tesla’s Supply Chain Dependencies</h4>
+                <ul>
+                    <li>**Dependency**: Tesla heavily relies on suppliers like CATL and Panasonic for battery production, making it vulnerable to supply disruptions and cost increases for critical materials like lithium and cobalt.</li>
+                    <li>**Linkages**: 
+                        <ul>
+                            <li>Competing EV makers, including BYD and Xpeng, are aggressively expanding their battery production capacities, which could intensify competition for raw materials.</li>
+                            <li>Tesla’s investment in proprietary battery technologies indicates an effort to reduce reliance on third-party suppliers.</li>
+                        </ul>
+                    </li>
+                    <li>**Implications**: Disruptions in raw material supply chains or competitive advancements in battery tech by peers could undermine Tesla’s cost leadership.</li>
+                </ul>
+                <h4>2. Collaboration in EV Charging Infrastructure</h4>
+                <ul>
+                    <li>**Dependency**: Tesla’s Supercharger network is increasingly being adopted by other EV manufacturers, creating a potential recurring revenue stream but also reducing its differentiation.</li>
+                    <li>**Implications**: Collaboration with competitors on charging standards may boost short-term revenue but could erode Tesla’s competitive edge if rivals develop their own charging ecosystems.</li>
+                </ul>
+                <h4>3. AI-Driven Technology Crossovers</h4>
+                <ul>
+                    <li>**Linkage**: Tesla shares AI development goals with companies like Nvidia, which supplies GPUs critical for training Tesla’s self-driving software.</li>
+                    <li>**Implications**: Nvidia’s leadership in AI infrastructure suggests that Tesla’s success in Full Self-Driving (FSD) technology depends on advancements in GPU performance. Conversely, Nvidia benefits from Tesla’s AI ambitions through increased demand.</li>
+                </ul>
+
+                <h3>Sectoral Interdependencies</h3>
+                <h4>1. Battery Materials and EV Expansion</h4>
+                <ul>
+                    <li>**Upstream Dependencies**:
+                        <ul>
+                            <li>The EV sector depends on raw material suppliers for lithium, cobalt, and nickel. Mining companies with a strong presence in these resources stand to benefit.</li>
+                            <li>The rising cost of these materials could directly impact the profitability of EV manufacturers like Tesla and BYD.</li>
+                        </ul>
+                    </li>
+                    <li>**Implications**: Supply chain constraints or rising costs could ripple downstream, creating margin pressure for automakers while boosting mining and refining companies.</li>
+                </ul>
+                <h4>2. Energy Storage and Renewable Energy</h4>
+                <ul>
+                    <li>**Linkage**: Tesla’s energy storage products like Megapacks complement its EV operations, positioning the company as a key player in grid-scale energy solutions.</li>
+                    <li>**Implications**: Integration with renewable energy systems (e.g., solar and wind farms) could create synergistic opportunities for Tesla. However, regulatory uncertainties in renewable energy markets might create headwinds.</li>
+                </ul>
+                <h4>3. AI and Industrial Automation</h4>
+                <ul>
+                    <li>**Shared Technologies**:
+                        <ul>
+                            <li>AI investments in autonomous vehicles overlap with industrial robotics, where Tesla’s Optimus project positions it as a potential player.</li>
+                        </ul>
+                    </li>
+                    <li>**Implications**: Progress in Tesla’s AI robotics could have downstream applications in manufacturing and logistics, potentially creating a new revenue stream while impacting traditional industrial automation providers.</li>
+                </ul>
+
+                <h3>Macroeconomic Linkages</h3>
+                <h4>1. Monetary Policy and EV Financing</h4>
+                <ul>
+                    <li>**Impact**: Rising interest rates have increased borrowing costs, which could slow EV adoption as financing becomes more expensive.</li>
+                    <li>**Implications**: Tesla’s reliance on financing incentives for consumer demand and expansion projects may face challenges in a high-rate environment. Conversely, this could boost demand for lower-cost EV options from competitors.</li>
+                </ul>
+                <h4>2. Global Trade and EV Markets</h4>
+                <ul>
+                    <li>**Impact**: Tesla’s international expansion exposes it to geopolitical tensions, particularly between the U.S. and China.</li>
+                    <li>**Implications**: Tariff changes or restrictions on critical exports like semiconductors could increase costs for Tesla while providing advantages to Chinese automakers operating domestically.</li>
+                </ul>
+                <h4>3. Fiscal Policies Supporting EV Adoption</h4>
+                <ul>
+                    <li>**Linkage**: The U.S. Inflation Reduction Act and similar policies in Europe incentivize EV adoption through subsidies, but strict sourcing requirements create compliance challenges.</li>
+                    <li>**Implications**: Tesla benefits from these policies in the short term, but long-term compliance could require costly adjustments to its supply chain.</li>
+                </ul>
+
+                <h3>Thematic Investment Opportunities</h3>
+                <h4>1. Sustainability and ESG</h4>
+                <ul>
+                    <li>**Opportunity**: Tesla’s leadership in EVs and renewable energy aligns with ESG-focused investment strategies.</li>
+                    <li>**Risks**: Failure to meet evolving ESG standards could tarnish Tesla’s brand and investor confidence, particularly as scrutiny over its supply chain practices grows.</li>
+                </ul>
+                <h4>2. AI and Technological Innovation</h4>
+                <ul>
+                    <li>**Opportunity**: Tesla’s integration of AI in FSD and robotics positions it to capitalize on emerging automation trends.</li>
+                    <li>**Risks**: Over-investment in AI without clear commercial returns could lead to capital misallocation, as seen in previous tech cycles.</li>
+                </ul>
+                <h4>3. Emerging Markets</h4>
+                <ul>
+                    <li>**Opportunity**: Expanding EV adoption in India and Southeast Asia presents a significant growth opportunity for Tesla.</li>
+                    <li>**Risks**: Local competition and price-sensitive consumers could limit Tesla’s ability to penetrate these markets profitably.</li>
+                </ul>
+                <h4>4. Energy Storage</h4>
+                <ul>
+                    <li>**Opportunity**: Increased adoption of grid-scale energy storage solutions could create a high-margin business segment for Tesla.</li>
+                    <li>**Risks**: Dependence on policy support and competition from incumbents like LG Energy Solutions could stifle growth.</li>
+                </ul>
+
+                <h3>Potential Risks, Correlations, and Investment Themes</h3>
+                <ul>
+                    <li>**Hidden Vulnerabilities**:
+                        <ul>
+                            <li>Tesla’s reliance on third-party suppliers for batteries exposes it to geopolitical and cost risks.</li>
+                            <li>Dependence on favorable regulatory environments for both EVs and energy storage creates long-term uncertainty.</li>
+                        </ul>
+                    </li>
+                    <li>**Unforeseen Consequences**:
+                        <ul>
+                            <li>Collaborations on charging infrastructure may erode Tesla’s competitive differentiation.</li>
+                            <li>Stricter sourcing regulations under policies like the Inflation Reduction Act could disrupt supply chains.</li>
+                        </ul>
+                    </li>
+                    <li>**Emerging Trends**:
+                        <ul>
+                            <li>Cross-sector AI applications in robotics and manufacturing could unlock diversification opportunities for Tesla.</li>
+                            <li>Growing consumer awareness and policy shifts may accelerate the energy transition, benefiting renewable-focused firms.</li>
+                        </ul>
+                    </li>
+                    <li>**Diversification Opportunities**:
+                        <ul>
+                            <li>Investments in upstream materials like lithium mining could hedge against rising input costs in the EV sector.</li>
+                            <li>Diversifying into non-auto applications of Tesla’s AI technologies could mitigate risks tied to EV market saturation.</li>
+                        </ul>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div id="chart-spinner" class="spinner-border" role="status" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <figure id="figure">
+                <img src="path/to/img" alt="Sentiment and Consensus/Divergence Chart" style="display: none;">
+                <figcaption>Sentiment and Consensus/Divergence Chart</figcaption>
+            </figure>
+        </div>
+    </div>
+    <footer class="my-5 vh-100 d-flex align-items-center justify-content-center"></footer>
+        <h1 class="display-4">Designed by <a href="https://www.straive.com/" class="text-reset link-offset-3 link-underline link-underline-opacity-25">Straive</a></h1>
+      </footer>
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" type="module"></script>
+    <script src='https://cdn.jsdelivr.net/gh/FThompson/FormPersistence.js@2.0.6/form-persistence.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@gramex/ui@0.3/dist/dark-theme.js" type="module"></script>
+    <script>
+        // Function to set light theme
+        function setLightTheme() {
+          document.documentElement.setAttribute('data-bs-theme', 'light');
+          updateThemeButtons('light');
+        }
+  
+        // Function to set dark theme
+        function setDarkTheme() {
+          document.documentElement.setAttribute('data-bs-theme', 'dark');
+          updateThemeButtons('dark');
+        }
+  
+        // Function to update theme button active states
+        function updateThemeButtons(activeTheme) {
+          const themeButtons = document.querySelectorAll('[data-bs-theme-value]');
+          themeButtons.forEach(button => {
+            if (button.getAttribute('data-bs-theme-value') === activeTheme) {
+              button.classList.add('active');
+            } else {
+              button.classList.remove('active');
+            }
+          });
+        }
+  
+        // Event listeners for theme buttons
+        document.addEventListener('DOMContentLoaded', () => {
+          const themeButtons = document.querySelectorAll('[data-bs-theme-value]');
+          
+          themeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+              const theme = button.getAttribute('data-bs-theme-value');
+              
+              switch(theme) {
+                case 'light':
+                  setLightTheme();
+                  break;
+                case 'dark':
+                  setDarkTheme();
+                  break;
+                case 'auto':
+                  // Remove theme attribute to use system preference
+                  document.documentElement.removeAttribute('data-bs-theme');
+                  updateThemeButtons('auto');
+                  break;
+              }
+            });
+          });
+  
+          // Set light theme by default
+          setLightTheme();
+        });
+
+        // Show spinner and stream content for key insights
+        document.addEventListener('DOMContentLoaded', () => {
+            const spinner = document.getElementById('spinner');
+            const content = document.getElementById('key-insight-content');
+
+            // Show spinner
+            spinner.style.display = 'block';
+
+            // Hide spinner and show content after 3 seconds
+            setTimeout(() => {
+                spinner.style.display = 'none';
+                content.style.display = 'block';
+                // Stream content
+                const fullText = content.textContent; // Get full text
+                content.innerHTML = ''; // Clear content for streaming effect
+                let index = 0;
+
+                const interval = setInterval(() => {
+                    if (index < fullText.length) {
+                        content.innerHTML += fullText.charAt(index);
+                        index++;
+                    } else {
+                        clearInterval(interval);
+                        // Show analysis section spinner for 5 seconds
+                        showAnalysisSection();
+                    }
+                }, Math.floor(Math.random() * (20 - 10 + 1)) + 10); // Adjust speed of streaming here
+            }, 3000); // 3 seconds
+        });
+
+        // Function to show analysis section after a spinner
+        function showAnalysisSection() {
+            const analysisSpinner = document.getElementById('analysis-spinner');
+            const analysisContent = document.getElementById('analysis-content');
+
+            // Show spinner
+            analysisSpinner.style.display = 'block';
+
+            // Hide spinner and show content after 5 seconds
+            setTimeout(() => {
+                analysisSpinner.style.display = 'none';
+                analysisContent.style.display = 'block';
+                // Show chart container spinner for 4 seconds
+                showChartSpinner();
+            }, 5000); // 5 seconds
+        }
+
+        // Function to show chart spinner
+        function showChartSpinner() {
+            const chartSpinner = document.getElementById('chart-spinner'); // Spinner for chart container
+            const chartImage = document.querySelector('.chart-container img'); // Image in chart container
+
+            // Show spinner
+            chartSpinner.style.display = 'block';
+
+            // Hide spinner and show image after 4 seconds
+            setTimeout(() => {
+                chartSpinner.style.display = 'none';
+                // Show the image (make sure the image is initially hidden)
+                chartImage.style.display = 'block'; // Show the image
+            }, 4000); // 4 seconds
+        }
+      </script>
+</body>
+</html>

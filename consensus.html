@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consensus Analysis Framework</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/gramener/assets/main/straive-favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-size: 0.9rem;
+        }
+
+        .container {
+            max-width: max-content;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .text-container {
+            flex: 1;
+            margin-right: 40px;
+            max-width: 50%;
+        }
+
+        .chart-container {
+            flex: 1;
+            text-align: center;
+            max-width: 50%;
+            margin-top: 100px; /* Adjust this value to align with Framework Analysis */
+        }
+
+        .key-insight {
+            background-color: lightgreen;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            border: 1px solid green;
+        }
+
+        .key-insight h2 {
+            font-weight: bold;
+        }
+
+        .analysis-section {
+            margin-bottom: 40px;
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            color: black;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            text-align: center;
+            color: black;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #37474f;
+            padding-bottom: 15px;
+            color: black;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        h4 {
+            font-style: italic;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-left: 20px;
+            color: black;
+        }
+        ul ul {
+            list-style-type: circle;
+            padding-left: 20px;
+            margin-left: 20px;
+        }
+
+        .analysis-section p {
+            color: black;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #37474f;
+            margin: 30px 0;
+        }
+        .navbar-brand{
+            font-size: 1.25rem;
+        }
+        .display-1{
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark"">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html"><b>DashBoard ></b> <a class="navbar-brand" href="/consensus.html" style="text-decoration: underline;">Consensus and Divergence</a></a>
+          <button class="btn btn-light" onclick="window.location.href='https://docsearch.straivedemo.com/doctool/'">Chat with AI</button>
+          <button disabled="true" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="nav-item dropdown ms-auto" role="group" aria-label="Toggle dark mode" title="Toggle Dark Mode">
+              <button class="dark-theme-toggle btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle theme (light)">
+                <i class="bi bi-circle-half"></i> <span class="d-lg-none ms-2">Toggle theme</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><button class="dropdown-item active" data-bs-theme-value="light"><i class="me-2 bi bi-sun-fill"></i> Light</button></li>
+                <li><button class="dropdown-item" data-bs-theme-value="dark"><i class="me-2 bi bi-moon-stars-fill"></i> Dark</button></li>
+                <li><button class="dropdown-item"><i class="me-2 bi bi-circle-half"></i> Auto</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <h1 class="display-1 my-4 text-center">Consensus &amp Divergence</h1>
+    <div class="container">
+        <div class="text-container">
+
+            <div class="key-insight">
+                <h2>Key Insight</h2>
+                <div id="spinner" class="spinner-border" role="status" style="display: none;">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p id="key-insight-content" style="display: none;">The emergence of a tri-polar risk landscape—centered on geopolitics, sustainability policies, and AI-driven economic concentration—is reshaping capital market dynamics. Geopolitics, such as U.S.-China tensions, amplifies fragmentation in supply chains. Sustainability policies like the IRA are accelerating regionalization and reinforcing localized production strategies. Simultaneously, AI’s rapid adoption is concentrating economic power within a few dominant players, exacerbating systemic vulnerabilities.</p>
+            </div>
+
+            <div class="analysis-section">
+                <h2>Framework Analysis</h2>
+                <div id="analysis-spinner" class="spinner-border" role="status" style="display: none;">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div id="analysis-content" style="display: none;">
+                    <h3>Valuations</h3>
+        <ul>
+            <li><strong>Tesla Valuations:</strong>
+                <ul>
+                    <li>Morningstar maintains a $700 fair value estimate, expecting automotive gross margin expansion from 29% in 2021 to nearly 39% by 2031.</li>
+                    <li>DBS Group Research targets $250, citing Tesla's economic moat in charging infrastructure and software while cautioning against price cuts.</li>
+                    <li>Relative valuation methods, such as EV/Sales, suggest Tesla might be overvalued with estimates closer to $57.20.</li>
+                </ul>
+                Valuation discrepancies stem from assumptions around EV adoption, margin improvements, and competitive dynamics.
+            </li>
+            <li><strong>Market-Wide Valuations:</strong>
+                <ul>
+                    <li>S&P 500 trades at ~21.6x forward P/E for 2024, with EPS growth expectations of ~9%.</li>
+                    <li>The "Magnificent 7" tech stocks have a forward P/E of 30x, reflecting growth optimism compared to 18x for the broader S&P 500.</li>
+                    <li>Family offices focus on high-quality, developed large-cap stocks, with concerns about tech sector valuations remaining elevated.</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h3>Recommendations</h3>
+        <ul>
+            <li><strong>Tesla:</strong>
+                <ul>
+                    <li>Analyst recommendations range from “Sell” based on intrinsic valuation methods to “Hold” driven by confidence in product launches.</li>
+                    <li>Caution is advised due to pricing risks, Chinese OEM competition, and regulatory headwinds in self-driving technology.</li>
+                </ul>
+            </li>
+            <li><strong>Market Recommendations:</strong>
+                <ul>
+                    <li>Shift focus toward mid-cap and value stocks as market participation broadens.</li>
+                    <li>Defensive equity allocations in Utilities and Industrials are being upgraded due to macroeconomic stability.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Market Outlooks</h3>
+        <ul>
+            <li><strong>Macro Sentiment:</strong>
+                <ul>
+                    <li>A cautiously optimistic outlook expects modest equity returns in 2024, with single-digit earnings and market gains for median stocks.</li>
+                    <li>AI and high-growth sectors dominate discussions, though risks of overexposure to the "Magnificent 7" persist.</li>
+                </ul>
+            </li>
+            <li><strong>Sector Sentiment:</strong>
+                <ul>
+                    <li>Positive sentiment for Industrials and Energy driven by U.S. industrial policies.</li>
+                    <li>Healthcare is seen as attractive due to favorable valuations and earnings growth potential.</li>
+                    <li>Neutral sentiment persists for Financials and Materials due to pressures in regional banking and commodity markets.</li>
+                </ul>
+            </li>
+            <li><strong>Tesla-Specific Sentiment:</strong>
+                <ul>
+                    <li>Growth-oriented analysts highlight Tesla's potential in energy storage and full self-driving markets, tempered by competitive pressures.</li>
+                    <li>Risk-oriented analysts emphasize execution risks tied to subsidies, supply chains, and regulatory challenges.</li>
+                </ul>
+            </li>
+        </ul>
+
+                    <h3>Key Areas of Consensus and Divergence</h3>
+                    <ul>
+                        <li><strong>Consensus:</strong>
+                            <ul>
+                                <li>Market leadership by AI-driven sectors continues, with EPS growth gaps narrowing between tech and other sectors by 2025.</li>
+                                <li>A stable macroeconomic backdrop supports modest equity returns, with earnings stability in focus.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Divergence:</strong>
+                            <ul>
+                                <li>Tesla's valuation projections vary widely depending on long-term growth assumptions and competitive factors.</li>
+                                <li>While tech dominates, opinions differ on AI's broader applicability and the sustainability of its growth.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div id="chart-spinner" class="spinner-border" role="status" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <figure id="figure">
+                <img src="path/to/img" alt="Sentiment and Consensus/Divergence Chart" style="display: none;">
+                <figcaption>Sentiment and Consensus/Divergence Chart</figcaption>
+            </figure>
+        </div>
+    </div>
+    <footer class="my-5 vh-100 d-flex align-items-center justify-content-center"></footer>
+        <h1 class="display-4">Designed by <a href="https://www.straive.com/" class="text-reset link-offset-3 link-underline link-underline-opacity-25">Straive</a></h1>
+      </footer>
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" type="module"></script>
+    <script src='https://cdn.jsdelivr.net/gh/FThompson/FormPersistence.js@2.0.6/form-persistence.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@gramex/ui@0.3/dist/dark-theme.js" type="module"></script>
+    <script>
+        // Function to set light theme
+        function setLightTheme() {
+          document.documentElement.setAttribute('data-bs-theme', 'light');
+          updateThemeButtons('light');
+        }
+  
+        // Function to set dark theme
+        function setDarkTheme() {
+          document.documentElement.setAttribute('data-bs-theme', 'dark');
+          updateThemeButtons('dark');
+        }
+  
+        // Function to update theme button active states
+        function updateThemeButtons(activeTheme) {
+          const themeButtons = document.querySelectorAll('[data-bs-theme-value]');
+          themeButtons.forEach(button => {
+            if (button.getAttribute('data-bs-theme-value') === activeTheme) {
+              button.classList.add('active');
+            } else {
+              button.classList.remove('active');
+            }
+          });
+        }
+  
+        // Event listeners for theme buttons
+        document.addEventListener('DOMContentLoaded', () => {
+          const themeButtons = document.querySelectorAll('[data-bs-theme-value]');
+          
+          themeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+              const theme = button.getAttribute('data-bs-theme-value');
+              
+              switch(theme) {
+                case 'light':
+                  setLightTheme();
+                  break;
+                case 'dark':
+                  setDarkTheme();
+                  break;
+                case 'auto':
+                  // Remove theme attribute to use system preference
+                  document.documentElement.removeAttribute('data-bs-theme');
+                  updateThemeButtons('auto');
+                  break;
+              }
+            });
+          });
+  
+          // Set light theme by default
+          setLightTheme();
+        });
+
+        // Show spinner and stream content for key insights
+        document.addEventListener('DOMContentLoaded', () => {
+            const spinner = document.getElementById('spinner');
+            const content = document.getElementById('key-insight-content');
+
+            // Show spinner
+            spinner.style.display = 'block';
+
+            // Hide spinner and show content after 3 seconds
+            setTimeout(() => {
+                spinner.style.display = 'none';
+                content.style.display = 'block';
+                // Stream content
+                const fullText = content.textContent; // Get full text
+                content.innerHTML = ''; // Clear content for streaming effect
+                let index = 0;
+
+                const interval = setInterval(() => {
+                    if (index < fullText.length) {
+                        content.innerHTML += fullText.charAt(index);
+                        index++;
+                    } else {
+                        clearInterval(interval);
+                        // Show analysis section spinner for 5 seconds
+                        showAnalysisSection();
+                    }
+                }, Math.floor(Math.random() * (20 - 10 + 1)) + 10); // Adjust speed of streaming here
+            }, 3000); // 3 seconds
+        });
+
+        // Function to show analysis section after a spinner
+        function showAnalysisSection() {
+            const analysisSpinner = document.getElementById('analysis-spinner');
+            const analysisContent = document.getElementById('analysis-content');
+
+            // Show spinner
+            analysisSpinner.style.display = 'block';
+
+            // Hide spinner and show content after 5 seconds
+            setTimeout(() => {
+                analysisSpinner.style.display = 'none';
+                analysisContent.style.display = 'block';
+                // Show chart container spinner for 4 seconds
+                showChartSpinner();
+            }, 5000); // 5 seconds
+        }
+
+        // Function to show chart spinner
+        function showChartSpinner() {
+            const chartSpinner = document.getElementById('chart-spinner'); // Spinner for chart container
+            const chartImage = document.querySelector('.chart-container img'); // Image in chart container
+
+            // Show spinner
+            chartSpinner.style.display = 'block';
+
+            // Hide spinner and show image after 4 seconds
+            setTimeout(() => {
+                chartSpinner.style.display = 'none';
+                // Show the image (make sure the image is initially hidden)
+                chartImage.style.display = 'block'; // Show the image
+            }, 4000); // 4 seconds
+        }
+      </script>
+</body>
+</html>
